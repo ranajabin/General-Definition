@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<head>
+    <title>
+        My Question Project
+    </title>
+    <style>
+        body {
+            background-color: azure;
+        }
+
+        h2 {
+            text-align: center;
+            color: blue;
+            font-size: 60px;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .question-text {
+            display: none;
+        }
+
+        .show-text .question-text {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <h2> General questions </h2>
+    <div class="container">
+        <div class="question-title">
+            <p> What is HTML ?</p>&nbsp; <button type="button" onclick="click1()" id="btn1" class="question-btn"> click
+                <!--      <span class="plus-icon">
+                <i class="far fa-plus-square"></i>
+            </span>
+            <span class="minus-icon">
+                <i class="far fa-minus-square"></i>
+            </span>  -->
+            </button>
+        </div>
+
+
+        <div>
+            <p id="html"></p>
+        </div>
+
+
+        <div class="question-title">
+            <p> What is CSS ?</p>
+            <button type="button" class="question-btn" onclick="click2()" id="btn1">click
+                <!--     <span class="plus-icon">
+                <i class="far fa-plus-square"></i>
+            </span>
+            <span class="minus-icon">
+                <i class="far fa-minus-square"></i>
+            </span>   -->
+            </button>
+        </div>
+
+        <div>
+            <p id="css"></p>
+        </div>
+
+
+        <div class="question-title">
+            <p> What is JS ?</p>
+            <button type="button" class="question-btn" onclick="click3()" id="btn1"> click
+                <!--     <span class="plus-icon">  
+                <i class="far fa-plus-square"></i>
+            </span>
+            <span class="minus-icon">
+                <i class="far fa-minus-square"></i>
+            </span>  -->
+            </button>
+        </div>
+
+        <div>
+            <p id="js"></p>
+        </div>
+    </div>
+    <script>
+        function click1() {
+            //  document.getElementById("html").innerHTML = "HMTL is used to add structure to our web pages";
+            document.getElementById("html").textContent = "HMTL is used to add structure to our web pages";
+        }
+
+        function click2() {
+            document.getElementById("css").innerHTML = "CSS is used to add styles to our web pages";
+            document.getElementById("html").textContent = "";
+            //   var im =document.getElementById("css");
+            //   im.innerHTML = "<img src= \"C5.jpg">" ;
+            //document.getElementById("css").innerHTML = ;
+        }
+
+        function click3() {
+            document.getElementById("js").innerHTML = "JS is used to add programming to our web pages";
+            document.getElementById("html").textContent = "";
+            document.getElementById("css").textContent = "";
+        }  
+    </script>
+</body>
+
+</html>
